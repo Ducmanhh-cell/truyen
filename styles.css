@@ -1,0 +1,119 @@
+/* Reset mặc định */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Segoe UI', Arial, sans-serif;
+    background-color: #f4f6f9;
+    color: #2c3e50;
+    line-height: 1.8;
+    padding: 20px;
+}
+
+/* Khung chứa toàn bộ trang */
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    background-color: #ffffff;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+/* Bước 4: Định dạng ảnh bìa truyện */
+.header-image {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.story-cover {
+    width: 100%;
+    max-height: 350px;
+    object-fit: cover;
+    border-radius: 6px;
+}
+
+/* Bước 7: Định dạng tiêu đề truyện */
+.story-title {
+    font-family: 'Georgia', serif;
+    font-size: 240%;
+    color: #1a252f;
+    text-align: center;
+    margin-top: 10px;
+    letter-spacing: 1px;
+}
+
+.story-author {
+    text-align: center;
+    font-style: italic;
+    color: #7f8c8d;
+    margin-bottom: 25px;
+}
+
+/* Bước 8: Định dạng khối mục lục truyện */
+.toc-container {
+    border: 2px dashed #3498db;
+    background-color: #ebf5fb;
+    padding: 20px;
+    border-radius: 6px;
+    margin-bottom: 35px;
+}
+
+.toc-title {
+    color: #2980b9;
+    margin-bottom: 12px;
+    text-transform: uppercase;
+    font-size: 110%;
+}
+
+.toc-list {
+    list-style-type: decimal;
+    padding-left: 25px;
+}
+
+.toc-list li {
+    margin-bottom: 8px;
+}
+
+/* Bước 5 & 8: Định dạng thẻ h5 và hiệu ứng hover liên kết trong mục lục */
+.toc-list h5 {
+    font-size: 105%;
+    font-weight: 600;
+}
+
+.toc-list a {
+    color: #2c3e50;
+    text-decoration: none;
+    transition: color 0.2s ease, text-decoration 0.2s ease;
+}
+
+.toc-list a:hover {
+    color: #e74c3c;
+    text-decoration: underline;
+}
+
+/* Bước 9: Định dạng phần thân bài và đoạn văn bản */
+.story-content section {
+    margin-bottom: 35px;
+    padding-top: 10px;
+}
+
+.story-content h2 {
+    font-size: 150%;
+    color: #2c3e50;
+    border-bottom: 2px solid #ecf0f1;
+    padding-bottom: 8px;
+    margin-bottom: 15px;
+}
+
+.story-content p {
+    text-align: justify;       /* Canh lề đều 2 bên */
+    line-height: 1.8;          /* Giãn dòng */
+    text-indent: 30px;         /* Thụt lề đầu dòng */
+    font-size: 110%;
+    color: #34495e;
+    margin-bottom: 15px;
+}
